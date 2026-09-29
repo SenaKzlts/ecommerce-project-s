@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProductSlider from '../components/Slider';
+import ProductSlider from '../components/Slider.jsx';
 
 const HomePage = () => {
   return (
