@@ -8,6 +8,7 @@ import ShopPage from './pages/ShopPage';
 import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import TeamPage from './pages/TeamPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/product/:id" element={<ProductDetailPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/team" element={<TeamPage />} />
           </Routes>
         </PageContent>
         <Footer />

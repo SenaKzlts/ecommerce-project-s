@@ -35,6 +35,11 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link to="/team" className="text-gray-600 hover:text-black transition-colors">
+                Team
+              </Link>
+            </li>
+            <li>
               <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
                 Contact
               </Link>
@@ -86,6 +91,11 @@ function Header() {
             <li>
               <Link to="/about" className="text-gray-600 hover:text-black transition-colors block py-2" onClick={() => setIsMenuOpen(false)}>
                 About
+              </Link>
+            </li>
+            <li>
+              <Link to="/team" className="text-gray-600 hover:text-black transition-colors block py-2" onClick={() => setIsMenuOpen(false)}>
+                Team
               </Link>
             </li>
             <li>
