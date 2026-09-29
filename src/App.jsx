@@ -7,22 +7,26 @@ import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 
 const App = () => {
   return (
     <Router>
-      <Header />
-      <PageContent>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/shop" element={<ShopPage />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/product/:id" element={<ProductDetailPage />} />
-          <Route path="/about" element={<AboutPage />} />
-        </Routes>
-      </PageContent>
-      <Footer />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <PageContent>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/product/:id" element={<ProductDetailPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </PageContent>
+        <Footer />
+      </div>
     </Router>
   );
 };
